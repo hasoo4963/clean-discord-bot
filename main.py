@@ -2,8 +2,7 @@ import discord
 import asyncio
 from datetime import datetime
 
-TOKEN = 'MTIxOTkyMjgzNTYyNDAzNDM2NA.G42Anp.KdYfwIFJsmDjfbc9z2CYL1s71BmAdDoPkLh6UI'
-CHANNEL_ID = '1219921240656183309'
+TOKEN = open("token","r").readline()
 
 class MyClient(discord.Client):
     async def on_ready(self):
